@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Background */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  /* Login Page Container */
+  .login-page {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Input Fields */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #7c7676;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(196, 196, 196);
+    background-color: #141414;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border: 1px solid #7c7676;
+    outline: none;
+    background-color: #1a1a1a;
+  }
+  
+  /* Submit Button */
+  button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.3s;
+    box-shadow: 0px 8px 15px rgba(255, 107, 107, 0.3);
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #ff4757, #ff6b6b);
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(255, 107, 107, 0.5);
+  }
+  
+  /* Error Message */
+  .error-message {
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white; /* White text for better contrast */
+    background-color: rgba(146, 0, 0, 0.7); /* Semi-transparent red */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+  }
+  
+  /* Mobile Responsive Design */
+  @media (max-width: 480px) {
+    .login-page {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  
+    input[type="email"],
+    input[type="password"] {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
